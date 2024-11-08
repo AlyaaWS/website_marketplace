@@ -14,9 +14,11 @@
         <thead>
             <tr>
                 <th>No</th>
-                <th>Produk</th>
+                <th>No Kategori</th>
+                <th>Judul Buku</th>
                 <th>Harga</th>
-                <th>Berat</th>
+                <th>Pengarang</th>
+                <th>Stok</th>
                 <th>Foto</th>
                 <th>Opsi</th>
             </tr>
@@ -26,9 +28,11 @@
 
             <tr>
                 <td><?php echo $key+1 ?></td>
+                <td><?php echo $value['id_kategori'] ?></td>
                 <td><?php echo $value['nama_produk'] ?></td>
                 <td><?php echo $value['harga_produk'] ?></td>
-                <td><?php echo $value['berat_produk'] ?></td>
+                <td><?php echo $value['pengarang'] ?></td>
+                <td><?php echo $value['stok'] ?></td>
                 <td>
                     <img src="<?php echo $this->config->item("url_produk").$value['foto_produk'] ?>" width="200">
                 </td>

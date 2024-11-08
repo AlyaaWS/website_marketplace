@@ -24,17 +24,20 @@
         </select>
         </div>
         <div class="mb-3">
-            <label>Nama</label>
+            <label>Judul Buku</label>
             <input type="text" name="nama_produk" value="<?php echo $produk['nama_produk'] ?>" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label>Pengarang</label>
+            <input type="text" name="pengarang" value="<?php echo $produk['pengarang'] ?>" class="form-control">
         </div>
         <div class="mb-3">
             <label>Harga</label>
             <input type="number" name="harga_produk" value="<?php echo $produk['harga_produk'] ?>"class="form-control">
         </div>
         <div class="mb-3">
-            <label>Berat</label>
-            <input type="number" name="berat_produk" value="<?php echo $produk['berat_produk'] ?>"class="form-control">
-            <span class="text-muted small">Gram</span>
+            <label>Stok</label>
+            <input type="number" name="stok" value="<?php echo $produk['stok'] ?>"class="form-control">
         </div>
         <div class="mb-3">
             <label>Foto</label>
